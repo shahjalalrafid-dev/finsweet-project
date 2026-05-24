@@ -4,25 +4,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
+
+
 .container {
     max-width: 1280px;
 }
+
 a {
     text-decoration: none;
 }
+
 /* All Common CSS End  */
 /* Navbar Section Design Start */
 .navbar {
     background-color: #1C1E53 !important;
     padding: 16px 0;
 }
+
 .nav-link {
     color: #BBBBCB !important;
+    font-size: 16px;
 }
+
 .nav_btn {
     padding: 16px 48px;
     border-radius: 41px;
@@ -30,18 +38,22 @@ a {
     background-color: #1C1E53;
     color: white;
 }
+
 .navbar-nav {
     align-items: center;
 }
+
 .nav-item {
     padding: 0 16px;
 }
+
 /* Navbar Section Design End */
 /* Banner Part Design Start */
 .banner_section {
     padding: 127px 0px;
     background-color: #1C1E53;
 }
+
 .banner_heading {
     font-weight: 600;
     color: white;
@@ -49,6 +61,7 @@ a {
     margin-bottom: 24px;
     font-size: 54px;
 }
+
 .banner_text {
     font-weight: 500;
     color: white;
@@ -56,6 +69,7 @@ a {
     margin-bottom: 48px;
     width: 562px;
 }
+
 .banner_btn {
     padding: 16px 56px;
     border-radius: 41px;
@@ -65,45 +79,348 @@ a {
     transition: all 0.5s;
     border: 1px solid transparent;
 }
+
 .banner_btn:hover {
     background-color: transparent;
     color: white;
     border: 1px solid white;
 }
+
 .price {
     color: white;
     margin-bottom: 0px;
     transition: all .5s;
 }
+
 .price:hover {
     color: #FCD980;
 }
+
 .banner_icon {
     opacity: 0;
     transition: .5s;
     position: absolute;
 }
+
 .price:hover .banner_icon {
     opacity: 1;
     animation: icon_animation 1s forwards;
 }
+
 @keyframes icon_animation {
+
+
+
+
+
     0% {
         transform: translate(0);
     }
-    50% {
+
+    100% {
         transform: translateX(300px);
     }
-    100% {
-        transform: translate(300px, -100px);
-    }
+
+
+
+
+
+
 }
+
 .fa-solid {
     margin-left: 20px;
 }
+
 .banner_flex {
     display: flex;
     align-items: center;
     column-gap: 40px;
 }
+
 /* Bnner Part Design End */
+/* Strategy Part Design Start */
+
+.section_design{
+    padding-top: 128px;
+    padding-bottom: 128px;
+    
+}
+
+.design_heading{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.design_description{
+    width: 334px;
+    font-size: 16px;
+    color: #282938;
+    margin-bottom: 16px;
+}
+
+
+.pointer1{
+    margin-bottom: 16px;
+
+}
+.pointer_heading{
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+.pointer_text{
+    width: 300px;
+    color: #C7C9D1;
+    font-weight: 500;
+}
+.pointer_row{
+    margin-bottom: 48px;
+}
+
+
+/* Strategy Part Design End */
+/* Section View Part Design Start */
+
+
+
+.section_view{
+    padding: 128px 0 128px 0;
+}
+.view_heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.view_heading h2{
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 48px;
+}
+.view_row{
+    row-gap: 30px;
+}
+.view_effect{
+    position: relative;
+    overflow: hidden;
+}
+.overlay{
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 48px;
+    cursor: pointer;
+    transition: all 1s;
+   
+}
+.overlay h6{
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 60%;
+    margin-bottom: 16px;
+    line-height: 36px;
+}
+.overlay p{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+.overlay:hover{
+    width: 100%;
+    
+}
+.view_effect2{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.overlay2{
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    cursor: pointer;
+    transition: all 1s;
+    padding-left: 56px;
+    
+   
+
+
+}
+.overlay2 h6{
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 50%;
+    
+}
+.view_effect2:hover .overlay2{
+    
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+}
+
+
+
+/* Section View Part Design End */
+
+/* Section Blog Part Design Start */
+
+.section_blog{
+    padding: 128px 0 128px 0;
+    background-color: #F4F6FC;
+
+}
+.section_blog h6{
+    text-align: center;
+    font-size: 16px;
+    color: #282938;
+}
+.section_blog h2{
+    width: 630px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    text-align: center;
+    margin: 0 auto;
+    color: #282938;
+    margin-bottom: 47px;
+}
+.blog{
+    width: 405px;
+    height: 316px;
+    background-color: white;
+    padding: 58px 0 48px 48px;
+}
+.blog img{
+    margin-bottom: 22px;
+}
+.blog h5{
+    margin-bottom: 12px;
+}
+.blog p{
+    width: 324px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6589AE;
+}
+
+
+.blog_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 24px;
+}
+
+
+
+
+
+
+
+/* Section Blog Part Design End */
+
+/* Section Feedback Design Start */
+.section_feedback{
+    padding: 128px 0 128px 0;
+    background-color: #F4F6FC;
+}
+.feedback_box{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+    column-gap: 110px;
+}
+
+.feed_1 h4{
+    font-size: 38px;
+    color: #282938;
+    line-height: 56px;
+    margin-bottom: 16px;
+}
+.feed_1 p{
+    width: 327px;
+    color: #6589AE;
+     font-size: 16px;
+     line-height: 28px;
+}
+
+.feedback_client{
+    display: flex;
+    column-gap: 10px;
+}
+.feed_2 h4{
+    font-size: 34px;
+    line-height: 48px;
+    color: #282938;
+    margin-bottom: 48px;
+}
+.feedback_text p:first-child{
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+.feedback_text p:last-child{
+    font-size: 12px;
+}
+
+/* Section Feedback Design End */
+
+/* Section Query Design Start */
+
+.section_query{
+    padding: 128px 0;
+}
+.query_box{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.accordion-item{
+    
+    border: none;
+    border-bottom: 1px solid #ECECF1 !important;
+}
+a .contact{
+    color: #2405F2;
+}
+.query_item{
+    font-size: 24px;
+}
+.list{
+    margin-right: 59px;
+    color: #2405F2;
+    font-size: 24px;
+    font-weight: 500;
+}
+.accordion-body{
+    font-size: 18px;
+    
+}
+
+.accordion-button{
+    padding: 32px 0;
+}
+.accordion{
+    --bs-accordion-active-bg: none;
+}
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+}
+
+
+
+
+
+/* Section Query Design End */

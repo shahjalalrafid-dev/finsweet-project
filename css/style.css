@@ -424,3 +424,239 @@ a .contact{
 
 
 /* Section Query Design End */
+
+/* Section cta Design Start */
+
+
+.section_cta{
+    padding-bottom: 77px;
+}
+
+.cta_image{
+    background-image: url('../image/cta_image.png');
+    background-size: cover;
+    background-position: center;
+    height: 691px;
+    padding-left: 96px;
+    opacity: .7;
+    position: relative;
+    
+    
+    
+    
+    
+    
+    
+}
+.cta_color{
+    background-color: #1C1E53;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    filter: brightness(50%);
+    opacity: .5;
+    
+}
+
+.cta_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
+    
+}
+
+
+.cta_image h2{
+    font-size: 54px;
+    line-height: 74px;
+    width: 464px;
+    color: white;
+    font-weight: 600;
+    margin-top: 96px;
+    margin-bottom: 24PX;
+}
+.cta_image p{
+    width: 464px;
+    font-size: 16px;
+    color: white;
+    line-height: 28px;
+
+}
+
+.cta_form{
+    background-color: #1C1E53;
+    padding-left: 96px;
+}
+.cta_form h5{
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 17px;
+    margin-top: 107px;
+}
+.cta_form p{
+    color: white;
+    font-size: 16px;
+    line-height: 28px;
+    width: 432px;
+
+}
+.form_cta input::placeholder{
+    color: #888AA7;
+    padding-left: 20PX;
+}
+.form_cta input{
+    width: 432px;
+    height: 64px;
+    background-color: #1C1E53;
+    border: 1px solid #26285B;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+.form_cta input[type = text], .form_cta input[type = email], .form_cta input[type = url] {
+    color: white;
+    padding-left: 10px;
+}
+.form_cta input:last-child{
+    margin-bottom: 34px;
+}
+.cta_btn{
+    background-color: #FCD980;
+    color: #1B1C2B;
+    width: 432px;
+    height: 64px;
+    border-radius: 41px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 33px;
+}
+a .cta_touch{
+    text-align: center;
+}
+
+/* Section cta Design End */
+
+/* Section Web blog design start */
+.section_web_blog{
+    padding-bottom: 179px;
+}
+.web_box h2{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 64px;
+}
+
+.web_image img{
+    margin-bottom: 40px;
+}
+
+.web_box h5{
+    font-size: 24px;
+    line-height: 36px;
+    font-size: 500;
+    margin-bottom: 16px;
+
+}
+
+.web_box .web_desc{
+    color: #A1A1A8;
+    line-height: 28px;
+    margin-bottom: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Section Web blog design End */
+
+/* Section Footer Design Start */
+
+
+.section_footer{
+    padding-top: 96px;
+    background-color: #1C1E53;
+}
+
+.footer_part1 img{
+    margin-bottom: 22px;
+}
+.footer_p{
+    width: 400px;
+    padding-bottom: 86px;
+    color: #A1A1A8;
+}
+.contact_web{
+    
+    width: 517px;
+    height: 95px;
+    background-color: #FCD980;
+    display: flex;
+    column-gap: 30px;
+    padding-left: 37px;
+    padding-top: 18px;
+    
+}
+.footer_part2 h3{
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 14px;
+}
+.footer_part2 p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #A1A1A8;
+    width: 400px;
+    margin-bottom: 28px;
+}
+
+.footer_part2 i{
+    color: white;
+    margin-right: 27px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+.section_last_footer{
+    padding: 32px 0;
+}
+.last_footer_box{
+    display: flex;
+    justify-content: space-between;
+}
+.last_footer_box p{
+    margin-bottom: 0px;
+}
+
+.footer_menu{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin-bottom: 0px;
+}
+
+.footer_menu li a{
+    text-decoration: none;
+    color: darkblue;
+    font-weight: 500;
+    
+}
+
+
+
+
+
+/* Section Footer Design End */

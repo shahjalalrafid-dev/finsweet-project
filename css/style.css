@@ -4,12 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+*, *::before, *::after {
+      box-sizing: border-box;
+    }
 
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
-
+html, body{
+    overflow-x: hidden;
+}
 
 .container {
     max-width: 1280px;
@@ -393,12 +398,19 @@ a {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
+.accordion-button{
+    font-size: 24px;
+}
+.accordion-button span{
+    margin-right: 60px;
+    color: #2405F2;
+}
 
-.accordion-item{
+/* .accordion-item{
     
     border: none;
     border-bottom: 1px solid #ECECF1 !important;
-}
+} */
 a .contact{
     color: #2405F2;
 }
@@ -413,23 +425,49 @@ a .contact{
 }
 .accordion-body{
     font-size: 18px;
+    border-bottom: 1px solid #ECECF1;
     
 }
+.accordion-body p{
+    font-size: 18px;
+    margin-left: 60px;
 
+    
+}
 .accordion-button{
     padding: 32px 0;
 }
-.accordion{
-    --bs-accordion-active-bg: none;
-}
-.accordion-item:first-of-type>.accordion-header .accordion-button {
-    border-top-left-radius: none;
-    border-top-right-radius: none;
+.section_query .accordion-item{
+    border: none;
 }
 
+.accordion-button:focus{
+    box-shadow: none;
+    
+}
 
 
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: transparent;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+.accordion {
+     --bs-accordion-border-width: none;
+}
+.accordion-button::after{
+    background-image: none;
+    content: "+";
+    transform: rotate(0deg);
+    transform: translateY(-18%);
+}
 
+.accordion-button:not(.collapsed)::after{
+    background-image: none;
+    content: "x";
+    transform: rotate(0deg);
+    transform: translateY(-18%);
+}
 
 /* Section Query Design End */
 
@@ -441,33 +479,33 @@ a .contact{
 }
 
 .cta_image{
-    background-image: url('../image/cta_image.png');
-    background-size: cover;
-    background-position: center;
-    height: 691px;
-    padding-left: 96px;
-    opacity: .7;
     position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.cta_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cta_color_overlay{
+    background-color: rgb(28, 30, 83, .5);
+    width: 100%;
+    height: 100%;
     
-    
-    
-    
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: .6s;
+    cursor: pointer;
+    padding: 96px 94px 261px 94px;
     
     
     
 }
-.cta_color{
-    background-color: #1C1E53;
-    width: 100%;
-    height: 100%;
-    opacity: .8;
-    position: absolute;
+.cta_image:hover .cta_color_overlay{
     left: 0;
     top: 0;
-    z-index: -2;
-    filter: brightness(50%);
-    opacity: .5;
-    
 }
 
 .cta_box{
@@ -479,16 +517,15 @@ a .contact{
 }
 
 
-.cta_image h2{
+.cta_color_overlay h2{
     font-size: 54px;
     line-height: 74px;
     width: 464px;
     color: white;
     font-weight: 600;
-    margin-top: 96px;
-    margin-bottom: 24PX;
+    margin-bottom: 24px;
 }
-.cta_image p{
+.cta_color_overlay p{
     width: 464px;
     font-size: 16px;
     color: white;
@@ -497,6 +534,7 @@ a .contact{
 }
 
 .cta_form{
+    width: 100%;
     background-color: #1C1E53;
     padding-left: 96px;
 }
@@ -512,6 +550,7 @@ a .contact{
     font-size: 16px;
     line-height: 28px;
     width: 432px;
+    padding-bottom: 40px;
 
 }
 .form_cta input::placeholder{
